@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connexion</title>
+    <!-- Lien vers Bootstrap pour le style général -->
     <link href="assets/CSS/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        /* Image de fond pleine page */
         body {
             background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80');
             background-size: cover;
@@ -14,6 +16,7 @@
             min-height: 100vh;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+        /* Carte centrale pour le formulaire */
         .card {
             background: rgba(255, 255, 255, 0.85);
             border-radius: 20px;
@@ -22,20 +25,24 @@
             border: 1px solid rgba(255, 255, 255, 0.18);
             margin-top: 40px;
         }
+        /* Titre du formulaire */
         .card-title {
             font-size: 2rem;
             font-weight: bold;
             color: #2c3e50;
             margin-bottom: 20px;
         }
+        /* Bouton principal */
         .btn-primary {
             background: #007bff;
             border: none;
             font-weight: bold;
         }
+        /* Bouton secondaire */
         .btn-success {
             font-weight: bold;
         }
+        /* Champs de saisie */
         input.form-control {
             border-radius: 10px;
             padding: 10px;
@@ -44,26 +51,33 @@
     </style>
 </head>
 <body>
+    <!-- Formulaire de connexion -->
     <form onsubmit="login(event)">
         <div class="card col-11 col-sm-5 position-absolute top-50 start-50 translate-middle shadow">
             <div class="card-body">
+                <!-- Titre du formulaire -->
                 <p class="card-title text-center">Se connecter</p>
+                <!-- Champ email -->
                 <div class="form-group mb-2">
                     <input class="form-control" id="email" type="email" placeholder="Email" required>
                 </div>
+                <!-- Champ mot de passe -->
                 <div class="form-group mb-2">
                     <input class="form-control" id="password" type="password" placeholder="Mot de passe" required>
                 </div>
+                <!-- Bouton de connexion -->
                 <div class="d-grid gap-2">
                     <button class="btn btn-primary" type="submit">Se connecter</button>
                 </div>
             </div>
             <hr class="sidebar-divider">
+            <!-- Bouton pour aller à la page de création de compte -->
             <div class="d-grid gap-2 col-6 mx-auto mb-2">    
                 <button class="btn btn-success" type="button" onclick="goToPage()">Créer un nouveau compte</button>
             </div>
         </div>
     </form>
+    <!-- Script JS pour la gestion de la connexion -->
     <script src="assets/JS/app.js"></script>
 </body>
 </html>
