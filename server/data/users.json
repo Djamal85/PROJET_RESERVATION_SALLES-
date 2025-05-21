@@ -16,5 +16,11 @@
     "email": "faiza@gmail.com",
     "password": "$2b$10$j21xqatw.83pUX1MsTMj9.8By0DqykeKOJz9uV53ifYvLV.2KDn3a",
     "id": 3
+  },
+  {
+    "name": "abdel",
+    "email": "abdel@gmail.com",
+    "password": "$2b$10$5PpTKOY3XGBtqzHXquI.1OWvvL1FMxV7MFwLQWgFuTI9/KOOroEQq",
+    "id": 4
   }
 ]
