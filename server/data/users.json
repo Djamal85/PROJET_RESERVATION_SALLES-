@@ -22,5 +22,11 @@
     "email": "abdel@gmail.com",
     "password": "$2b$10$5PpTKOY3XGBtqzHXquI.1OWvvL1FMxV7MFwLQWgFuTI9/KOOroEQq",
     "id": 4
+  },
+  {
+    "name": "fama",
+    "email": "faman6228@gmail.com",
+    "password": "$2b$10$0DriApsnPXah02eiiMofkOTHpwWO7mx4AkcRHLUYaoTpaT3yloXUe",
+    "id": 5
   }
 ]
