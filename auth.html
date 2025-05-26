@@ -6,131 +6,69 @@
   <title>Connexion</title>
   <link href="assets/CSS/Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <style>
-    body {
-      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-        url('https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=1500&q=80');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    .card {
-      background: rgba(255, 255, 255, 0.95);
-      border-radius: 16px;
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-      padding: 40px;
-      max-width: 420px;
-      width: 100%;
-      animation: fadeIn 0.8s ease-in-out;
-    }
-
-    .logo {
-      display: block;
-      margin: 0 auto 20px;
-      width: 80px;
-    }
-
-    .card-title {
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: #2c3e50;
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .input-group-text {
-      background-color: #f1f1f1;
-      border: none;
-    }
-
-    .form-control {
-      border-left: none;
-      font-size: 1rem;
-      border-radius: 0 8px 8px 0;
-    }
-
-    .input-group {
-      border: 1px solid #ced4da;
-      border-radius: 8px;
-      overflow: hidden;
-      margin-bottom: 15px;
-    }
-
-    .btn-primary, .btn-success {
-      font-weight: bold;
-      font-size: 1.1rem;
-      padding: 10px;
-      border-radius: 10px;
-      transition: 0.2s;
-    }
-
-    .btn-primary:hover, .btn-success:hover {
-      transform: translateY(-2px);
-    }
-
-    .forgot-link {
-      text-align: right;
-      font-size: 0.9rem;
-      margin-top: -10px;
-      margin-bottom: 20px;
-    }
-
-    .forgot-link a {
-      color: #007bff;
-      text-decoration: none;
-    }
-
-    .forgot-link a:hover {
-      text-decoration: underline;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: scale(0.95); }
-      to { opacity: 1; transform: scale(1); }
-    }
-  </style>
+  <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="assets/css/auth.css">
 </head>
 <body>
-  <form onsubmit="login(event)">
-    <div class="card">
-      <!-- Logo optionnel -->
-      <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" class="logo" alt="Logo">
-      <p class="card-title">Connexion à votre compte</p>
+  <div class="container">
 
-      <!-- Champ Email -->
-      <div class="input-group">
-        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
-        <input type="email" class="form-control" id="email" placeholder="Adresse e-mail" required>
-      </div>
-
-      <!-- Champ Mot de passe -->
-      <div class="input-group">
-        <span class="input-group-text"><i class="fas fa-lock"></i></span>
-        <input type="password" class="form-control" id="password" placeholder="Mot de passe" required>
-      </div>
-
-      <!-- Lien oublié -->
-      <div class="forgot-link">
-        <a href="#">Mot de passe oublié ?</a>
-      </div>
-
-      <!-- Bouton connexion -->
-      <div class="d-grid gap-2 mb-3">
-        <button class="btn btn-primary" type="submit">Se connecter</button>
-      </div>
-
-      <!-- Bouton création de compte -->
-      <div class="d-grid gap-2">
-        <button class="btn btn-success" type="button" onclick="goToPage()">Créer un nouveau compte</button>
-      </div>
+    <div class="form-box login">
+      <form action="">
+        <h1>Connexion</h1>
+        <div class="input-box">
+          <input type="text" placeholder="Username" required>
+          <i class='bx bx-user'></i> 
+        </div>
+        <div class="input-box">
+          <input type="password" placeholder="Password" required>
+          <i class='bx bx-lock'></i> 
+        </div>
+        <div class="forgot-link">
+          <a href="#">Mot de passe oublié?</a>
+        </div>
+        <button type="submit" class="btn">Se connecter</button>
+      </form>
     </div>
-  </form>
+
+    <div class="form-box register">
+      <form action="">
+        <h1>Inscription</h1>
+        <div class="input-box">
+          <input type="text" placeholder="name" name="name" required>
+          <i class='bx bx-user'></i> 
+        </div>
+        <div class="input-box">
+          <input type="email" placeholder="Email" name="email" required>
+          <i class='bx bx-envelope'></i>  
+        </div>
+        <div class="input-box">
+          <input type="password" placeholder="Password" name="password" required>
+          <i class='bx bx-lock'></i> 
+        </div>
+        <div class="forgot-link">
+          <a href="#">Mot de passe oublié?</a>
+        </div>
+        <button type="submit" class="btn">S'inscrire</button>
+      </form>
+    </div>
+
+    <div class="toggle-box">
+
+      <div class="toggle-panel toggle-left">
+        <h1>Salut, Bienvenue!</h1>
+        <p>Avez-vous un compte?</p>
+        <button class="btn register-btn">S'inscrire</button>
+      </div>
+
+      <div class="toggle-panel toggle-right">
+        <h1>Bienvenue!!</h1>
+        <p>déjà inscrit(e)?</p>
+        <button class="btn login-btn">Se connecter</button>
+      </div>
+
+    </div>
+  </div>
   <script src="assets/JS/app.js"></script>
+  <script src="server/index.js"></script>
 </body>
 </html>
