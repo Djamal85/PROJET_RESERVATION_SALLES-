@@ -40,5 +40,17 @@
     "name": "aa",
     "email": "aa@gmail.com",
     "password": "$2b$10$md09lXRQl1kmkP9pe8sgvuDzRprCrYimOD0bcakrWKPD7jJLYIlii"
+  },
+  {
+    "id": "1748341914454",
+    "name": "fama",
+    "email": "faman6228@gmail.com",
+    "password": "$2b$10$0llxmyvynISVlJNnxEvFv.nXrcQobj3EiwWyiiGRNiJ51nB/XDsYi"
+  },
+  {
+    "id": "1748342862829",
+    "name": "fama",
+    "email": "ana@gmail.com",
+    "password": "$2b$10$Yr8F8NKdboSTDNgoFsDMbedsG/I.4PoVOyVrFqSK3/6lBlMukCu3i"
   }
 ]
