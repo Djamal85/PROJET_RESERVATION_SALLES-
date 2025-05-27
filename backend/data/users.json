@@ -28,5 +28,17 @@
     "name": "rien",
     "email": "rien@gmail.com",
     "password": "$2b$10$qGxsq1ykmL0c3Mwh8p0yvO587l3DLN6OenJL.VCWP0X4LOSaD2ZGG"
+  },
+  {
+    "id": "1748340794778",
+    "name": "younous",
+    "email": "younous@gmail.com",
+    "password": "$2b$10$ZMDqBqEZhlqunxp8mjfEN.LgnIFLlZwf1n.i8apv7VVbK3szKB5pm"
+  },
+  {
+    "id": "1748341489215",
+    "name": "aa",
+    "email": "aa@gmail.com",
+    "password": "$2b$10$md09lXRQl1kmkP9pe8sgvuDzRprCrYimOD0bcakrWKPD7jJLYIlii"
   }
 ]
